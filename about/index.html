@@ -50,6 +50,7 @@ display: block;
 body {
   font-family: Arial, Helvetica, sans-serif;
 position: relative;
+color: black;
 }
 
 /* Style the header */
@@ -70,7 +71,7 @@ left:0;
 
 /* Style the footer */
 .footer {
-position: absolute;
+position: relative;
 left: 0;
 bottom: 0;
   background-color: #a3a3c2;
@@ -94,10 +95,11 @@ max-width: 100%;
   height: auto;
  }
 
-about {
-text-align: center;
+.about {
+  padding: 10px;
+  text-align: center;
   font-family: Palatino;
-  font-size: 12px;
+  font-size: 16px;
   color: black;
 }
 
@@ -124,8 +126,8 @@ text-align: center;
 
 <img src="/about/aboutme.jpg" alt="NY Picture" class = "responsive" width="300" height="400">
 
-<div id="about">
-	<p> My name is Anna. </p>
+<div class = "about">
+	<p>Welcome to Baked by Anna! As you can probably tell, my name is Anna! I am a junior at Loyola University Chicago studying Computer Science with a minor in Computer Crime and Forensics. When I am not working on school, I love to bake. Like its recipes, Baked by Anna was created completely from scratch using HTML and CSS. I hope you enjoy these favorite recipes of mine! </p>
 </div>
 
 <div class="footer">
