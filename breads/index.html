@@ -7,12 +7,11 @@
 <style>
 
 #nav {
-    position: absolute;
     left: 0px;
     background-color: #f3f3f3;
     width: 100%;
     margin: 0 auto;
-margin-top: 75px;
+margin-top: 0px;
 }
 
 #nav ul {
@@ -54,11 +53,11 @@ body {
 /* Style the header */
 .header {
   background: #a3a3c2;
+  height: 80px
 width: 100%;
-position: absolute;
+/*position: fixed;*/
 top:0;
 left:0;
-height: 80px
   padding: 10px;
   text-align: center;
   font-family: Palatino;
@@ -69,7 +68,7 @@ height: 80px
 
 /* Style the footer */
 .footer {
-position: fixed;
+position: relative;
 left: 0;
 bottom: 0;
   background-color: #a3a3c2;
@@ -77,7 +76,43 @@ bottom: 0;
 font-family: Palatino;
   text-align: center;
   color: white;
-width: 100%;
+max-width: 100%;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: Palatino;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 </style>
@@ -101,9 +136,50 @@ width: 100%;
     </ul>
 </div>
 
+<br>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/breads/cinnamonbread.jpg">
+      <img src="/breads/cinnamonbread.jpg" alt="Cinnamon Raisin Bread" width="600" height="400">
+    </a>
+    <div class="desc">Cinnamon Raisin Bread</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/breads/pizzadough.jpg">
+      <img src="/breads/pizzadough.jpg" alt="Pizza Dough" width="600" height="400">
+    </a>
+    <div class="desc">Pizza Dough</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/breads/cinnamonrolls.jpg">
+      <img src="/breads/cinnamonrolls.jpg" alt="Cinnamon Rolls" width="600" height="400">
+    </a>
+    <div class="desc">Cinnamon Rolls</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/breads/dinnerrolls.jpg">
+      <img src="/breads/dinnerrolls.jpg" alt="Dinner Rolls" width="600" height="400">
+    </a>
+    <div class="desc">Dinner Rolls</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
 <div class="footer">
 	<p>Made by Anna Bakas | abakas@luc.edu | Copyright © 2020</p>
 </div>
 </body>
 </html>
+
 
